@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "auto_refresh_minutes": 60,
+    "start_automatically": true,
+    "language": "traditional_chinese"
+  },
+  "providers": {
+    "openrouter": {
+      "api_key": "DEIN_OPENROUTER_KEY",
+      "free_models": ["google/gemini-flash-1.5", "deepseek/deepseek-chat", "mistralai/mistral-7b-instruct"],
+      "base_url": "https://openrouter.ai/api/v1/chat/completions"
+    },
+    "groq": {
+      "api_key": "DEIN_GROQ_KEY",
+      "free_models": ["llama3-8b-instant", "mixtral-8x7b-instruct-v0.1"],
+      "base_url": "https://api.groq.com/v1/chat/completions"
+    },
+    "mistral": {
+      "api_key": "DEIN_MISTRAL_KEY",
+      "free_models": ["mistral-tiny"],
+      "base_url": "https://api.mistral.ai/v1/chat/completions"
+    }
+  },
+  "stocks": ["AAPL", "MSFT", "GOOGL", "TSLA", "AMZN", "NVDA", "META", "2330.TW", "2454.TW"],
+  "analysis_days": 5
+}
